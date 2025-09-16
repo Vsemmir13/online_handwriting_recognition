@@ -1,0 +1,17 @@
+model:
+  feature_dim: 256
+  num_conv1d_layers: 6
+  num_conv2d_layers: 6
+  num_bigru_layers: 2
+  num_transformer_layers: 2
+  alignment_weight: 1.0
+  dropout: 0.2
+
+train:
+  epochs: 50
+  batch_size: 32
+  learning_rate: 0.0001
+  weight_decay: 0.00001
+  save_interval: 5
+  preprocess: 1
+  checkpoint_dir: "checkpoints/training/"
